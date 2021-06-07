@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewprt" content="width= device-width, initial-scale= 1.0">
+	<title> Image Gall</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+<!--   <div class="column">
+    <img src="img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div> -->
+    <div class="column">
+    <img src="img5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img6jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>.
+    <div class="column">
+    <img src="img7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+ <div class="column">
+    <img src="img10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div> 
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 13</div>
+      <img src="img1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 13</div>
+      <img src="img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 13</div>
+      <img src="img3.jpg" style="width:100%">
+    </div>
+    
+   <!--  <div class="mySlides">
+      <div class="numbertext">4 / 11</div>
+      <img src="img4.jpg" style="width:100%">
+    </div> -->
+    <div class="mySlides">
+      <div class="numbertext">5 / 13</div>
+      <img src="img5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 13</div>
+      <img src="img6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 13</div>
+      <img src="img7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 13</div>
+      <img src="img8.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 13</div>
+      <img src="img9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 13</div>
+      <img src="img10.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 13</div>
+      <img src="img11.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 13</div>
+      <img src="img12.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 13</div>
+      <img src="img13.jpg" style="width:100%">
+    </div>
+
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="1/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img12.jpg" style="width:100%" onclick="currentSlide(2)" alt="2/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="3/13">
+    </div>
+    <!-- <div class="column">
+      <img class="demo cursor" src="img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="4/13">
+    </div> -->
+    <div class="column">
+      <img class="demo cursor" src="img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="5/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="6/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img7.jpg" style="width:100%" onclick="currentSlide(7)" alt="7/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img8.jpg" style="width:100%" onclick="currentSlide(8)" alt="8/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img9.jpg" style="width:100%" onclick="currentSlide(9)" alt="9/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img10.jpg" style="width:100%" onclick="currentSlide(10)" alt="10/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img11.jpg" style="width:100%" onclick="currentSlide(11)" alt="11/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img12.jpg" style="width:100%" onclick="currentSlide(12)" alt="12/13">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img13.jpg" style="width:100%" onclick="currentSlide(13)" alt="13/13">
+    </div>
+  </div>
+</div> 
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
